@@ -1,4 +1,3 @@
-
 a:hover{
 	text-decoration:none;
 }
@@ -21,6 +20,51 @@ a:hover{
 	margin:20px auto;
 }
 
+#header{
+	color:#fff;
+	background:#e74c3c;
+}
+#logo{
+	font-size:2rem;
+	margin-top:5px;
+}
+#menu{
+	list-style:none;
+	margin:0;'
+    padding:0;
+}
+#menu li{
+	display:inline-block;
+
+}
+#menu li a{
+	color:#fff;
+	padding:15px 10px;
+	display:block;
+	
+}
+#menu li a:hover{
+	background:#c0392b;
+}
+#banner{
+	background:url('../images/banners.jpg') no-repeat 0 0;
+	Background-size:cover;
+}
+.banner-title{
+	padding-top:5rem;
+	
+}
+.banner-title h1{
+	background:rgba(255,255,255,0.8);
+	display:inline-block;
+	padding:10px;
+	margin:0;
+}
+.banner-title p.lead{
+  color:#fff;
+  background:rgba(231,76,60,0.8);
+  padding:10px;
+}
 .service-box{
 	text-align:center;
 }
@@ -30,18 +74,39 @@ a:hover{
 	font-size:70px;
 	margin-bottom:15px;
 }
+#testimonials{
+	color:#fff;
+	background:url(../images/testimonial-bg.jpg)no-repeat 0 0;
+	bacKground-size:cover;
+	padding:50px 0;
+	position:relative;
+}
+
+#testimonials:before{
+	background:rgba(52,73,94,0.3);
+	content:"";
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
 	
-.blog-post img{
+	}
+	
+	.testimonial img{
+		border-radius:50%;
+	}
+	
+	.news-post img{
 		width :100%;
 		margin-bottom:10px;
 		
 	}
-	.blog-post h3
+	.news-post h3
 	{
 		font-size:1.35rem;
 		
 	}
-	.blog-post h3 a {
+	.news-post h3 a {
 		color :#e74c3c;
 	} 
 	
@@ -68,12 +133,6 @@ a:hover{
 		padding-left:5px;
 		
 	}
-	
-	.gallary-post img{
-		width :100%;
-		margin-bottom:10px;
-	}
-	
 	#footer-sidebar{
 		color:#fff;
 		background:#34495e;
@@ -92,21 +151,20 @@ a:hover{
 	.footer-widget a{
 		color:#fff;
 	}
-	
-	
-	.quickLink{
+
+	.latestnews{
 		
 		list-style:none;
 		padding:o;
 		margin:0;
 		
 	}
-	.quickLink li{
+	.latestnews li{
 		margin-bottom:3px;
 		
 		
 	}
-	.quickLink li:before{
+	.latestnews li:before{
 	    content:"\f101";
 		font-family:FontAwesome;
 		padding-right:5px;	
@@ -135,17 +193,41 @@ a:hover{
 		
 	}
 	@media (max-width:992px){
-		quickLink{
+		news-post{
 			margin-bottom:30px;
 		}
 	}
 	@media(max-width:768px){
-		#footer{
+		#logo{
+			text-align:center;
+			margin:10px 0;
+		}
+		#menu{
+			text-align:center;
+		}
+		.banner-title{
+			padding-top:0;
+		}
+		.banner-title h1{
+			font-size:1.7rem;
+		}
+		.section{
+			padding-top:40px;
+			padding-bottom:40px;
+		}
+		.testimonial{
+			text-align:center;
+			margin-bottom:30px;
+		}
+		.service-box{
+			margin-bottom:30px;
+		}
+		}
+		
+	#footer{
 		text-align:center;
 	}
 	#social-icon{
 		margin-top:10px;
 	}
 	}
-
-		
